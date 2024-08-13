@@ -8,4 +8,9 @@ $(window).on("load resize", function () {
       });
     });
   }
+  if ($("#bilibiliIframe")) {
+    $("#bilibiliIframe").css({
+      height: $("#bilibiliIframe").width() * 0.7,
+    });
+  }
 });
