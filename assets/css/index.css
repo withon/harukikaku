@@ -3,6 +3,27 @@ body {
   color: white;
 }
 
+.navbar {
+  background-color: transparent;
+}
+.navbar.fixed-top {
+  position: fixed;
+  width: 100%;
+  z-index: 1030;
+}
+
+.header-nav .nav-link {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  font-size: 1rem;
+  color: #cccccc;
+  transition: background-color 300ms
+}
+
+.header-nav .nav-link:hover {
+  color: #ffffff
+}
+
 .spotlight {
   height: 100vh;
   background-size: cover;
@@ -16,7 +37,7 @@ body {
 }
 
 .intro {
-  background-color:bisque;
+  background-color: bisque;
   color: black;
 }
 
@@ -24,3 +45,6 @@ body {
   font-weight: 500 !important;
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
