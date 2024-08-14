@@ -4,7 +4,8 @@ body {
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
 }
 .navbar.fixed-top {
   position: fixed;
@@ -16,7 +17,7 @@ body {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
   font-size: 1rem;
-  color: #cccccc;
+  color: #dddddd;
   transition: background-color 300ms
 }
 
