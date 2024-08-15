@@ -14,10 +14,10 @@ let G_IF_TOP = true; // 全局-是否在顶部
 */
 function debounce(fn, wait) {
   var timeout = null;
-  return function() {
-      if(timeout !== null) clearTimeout(timeout);
-      timeout = setTimeout(fn, wait);
-  }
+  return function () {
+    if (timeout !== null) clearTimeout(timeout);
+    timeout = setTimeout(fn, wait);
+  };
 }
 /*
   节流函数

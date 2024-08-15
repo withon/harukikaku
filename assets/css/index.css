@@ -3,6 +3,11 @@ body {
   color: white;
 }
 
+footer {
+  color: rgb(201, 201, 201);
+  font-size: small;
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(8px);
@@ -41,8 +46,8 @@ body {
   height: 100%;
 }
 
-.intro {
-  background-color: bisque;
+.section-light {
+  background-color: rgb(255, 234, 211);
   color: black;
 }
 
