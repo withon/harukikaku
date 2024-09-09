@@ -16,6 +16,20 @@ body {
 .bg-transparent {
   background-color: transparent;
 }
+
+.text-wrap {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.text-wrap h3 {
+  padding: 2rem 0 1.5rem;
+}
+
+.text-wrap p {
+ padding-bottom: 1rem;
+}
 /***** common theme END *****/
 
 /***** footer BEGIN *****/
