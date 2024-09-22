@@ -1,15 +1,85 @@
-.spotlight {
-  height: 80vh;
-  background-size: cover;
+.swiper {
+  height: 800px;
+}
+
+.swiper-bg {
+  height: 100%;
+  margin: 0 auto;
+  background: center top no-repeat white;
+  background-size: auto 120%;
+}
+
+.swiper-continer {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.swiper-character {
+  position: absolute;
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
-  text-shadow: 1px 1px 2px black;
 }
 
-.spotlight .container {
+.swiper-character {
   height: 100%;
+  width: 100%;
+  top: 100px;
+  left: 0px;
 }
 
-.spotlight-holder {
-  height: 100%;
+.swiper-card {
+  font-family: "Noto Sans SC";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  color: #000;
+  border-radius: 15px;
+  z-index: 1;
+  padding: 30px;
+}
+.swiper-card {
+  width: 450px;
+  top: 100px;
+  right: 720px;
+}
+
+@media (min-width: 992px) {
+  .swiper-continer {
+    max-width: 986px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .swiper-character {
+    height: 650px;
+    width: 500px;
+    top: 100px;
+    left: 0px;
+  }
+
+  .swiper-card {
+    width: 450px;
+    top: 100px;
+    right: 0;
+  }
+}
+
+.swiper-card img {
+  display: block;
+  margin: 0 auto;
+}
+
+.swiper-card h1 {
+  font-size: 22px;
+}
+.swiper-card h2 {
+  font-size: 20px;
+}
+.swiper-card p {
+  font-size: 16px;
 }

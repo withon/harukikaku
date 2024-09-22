@@ -1,0 +1,15 @@
+.spotlight {
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+.spotlight .container {
+  height: 100%;
+}
+
+.spotlight-holder {
+  height: 100%;
+}
