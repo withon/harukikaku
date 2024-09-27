@@ -1,21 +1,15 @@
-.swiper {
-  height: 800px;
-}
-
 .swiper-bg {
   height: 100%;
   margin: 0 auto;
   background: center top no-repeat white;
-  background-size: auto 120%;
 }
 
 .swiper-continer {
+  display: flex;
   position: relative;
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
 .swiper-character {
@@ -23,13 +17,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-}
-
-.swiper-character {
-  height: 100%;
-  width: 100%;
-  top: 100px;
-  left: 0px;
 }
 
 .swiper-card {
@@ -42,17 +29,52 @@
   z-index: 1;
   padding: 30px;
 }
-.swiper-card {
-  width: 450px;
-  top: 100px;
-  right: 720px;
+
+@media (max-width: 991.98px) {
+  .swiper-bg {
+    background-size: 100% auto;
+  }
+
+  .swiper {
+    height: 1000px;
+  }
+
+  .swiper-continer {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  .swiper-character {
+    height: calc(80% - 70px);
+    width: calc(100% - 20px);
+    top: 60px;
+    background-position: center 0;
+  }
+
+  .swiper-card {
+    background-color: rgba(245, 201, 201, 0.75);
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-height: 80%;
+    overflow: auto;
+  }
 }
 
 @media (min-width: 992px) {
+  .swiper-bg {
+    background-size: auto 100%;
+  }
+
+  .swiper {
+    height: 800px;
+  }
+
   .swiper-continer {
-    max-width: 986px;
-    padding-left: 0;
-    padding-right: 0;
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 980px;
   }
 
   .swiper-character {
@@ -63,9 +85,11 @@
   }
 
   .swiper-card {
-    width: 450px;
-    top: 100px;
-    right: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    max-width: 400px;
+    max-height: 80%;
+    overflow: auto;
   }
 }
 
